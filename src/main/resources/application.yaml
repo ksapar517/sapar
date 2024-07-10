@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sapar
+    username: postgres
+    password: 5566
+  flyway:
+    schemas:
+      - public
+      - catalogue
