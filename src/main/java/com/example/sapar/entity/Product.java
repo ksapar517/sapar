@@ -6,15 +6,11 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-
-
 @Table(schema = "catalogue", name = "t_product")
 public class Product {
 
@@ -24,8 +20,9 @@ public class Product {
 
     @Column(name = "c_title")
     @NotNull
-    @Size(min = 3 ,max = 50)
+    @Size(min = 3, max = 50)
     private String title;
+
     @Column(name = "c_details")
     @Size(max = 1000)
     private String details;

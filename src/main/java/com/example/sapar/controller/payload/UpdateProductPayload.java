@@ -1,8 +1,8 @@
 package com.example.sapar.controller.payload;
 
+
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-
 
 public record UpdateProductPayload(
         @NotNull(message = "{catalogue.products.update.errors.title_is_null}")

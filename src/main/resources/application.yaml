@@ -1,12 +1,18 @@
-server:
-  port: 8082
-
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/sapar
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: 5566
-  flyway:
-    schemas:
-      - public
-      - catalogue
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  freemarker:
+    expose-request-attributes: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+server:
+  port: 8081
+
