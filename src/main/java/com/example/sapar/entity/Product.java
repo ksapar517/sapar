@@ -13,6 +13,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+
+
 @Table(schema = "catalogue", name = "t_product")
 public class Product {
 
